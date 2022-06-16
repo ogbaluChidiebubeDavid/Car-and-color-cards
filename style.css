@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:wght@300&display=swap');
+
+:root{  
+--Bright_orange: hsl(31, 77%, 52%);
+--Dark_cyan: hsl(184, 100%, 22%);
+--Very_dark_cyan: hsl(179, 100%, 13%);
+--white: hsla(0, 0%, 100%, 0.75);
+--light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: var(--light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin-top: 10%;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: var(--white);
+    font-size: 15px;
+}
+
+h1{
+    color: var(--light-gray);
+    padding: 15px 0 0 0;
+}
+
+button{
+    margin-left: 1px;
+    padding: 9px 25px;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.sedan-btn{
+    color: var(--Bright_orange);
+}
+
+.luxury-btn{
+    color: var(--Very_dark_cyan);
+}
+
+.goto-btn{
+    color: var(--light-gray);
+    background-color: var(--Bright_orange);
+}
+
+.suv-btn{
+    color: var(--Dark_cyan);
+}
+
+.sedans, .suv, .luxury{
+    flex-basis: 21%;
+    padding: 40px;
+}
+
+@media screen and (max-width: 999px) {
+    section{
+        flex-direction: column;
+    }
+}
+
+.sedans{
+    background: var(--Bright_orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.suv{
+    background: var(--Dark_cyan);
+}
+
+.luxury{
+    background: var(--Very_dark_cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.description{
+    padding: 20px 0 50px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
